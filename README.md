@@ -32,12 +32,22 @@
 ```
 Huawei-Switch-Configuration-Command-Generator/
 ├─ ui/                   # 所有界面和功能模块源码
-│   ├─ MainFrame.java    # 主界面入口
-│   ├─ DevicePanel.java  # 设备管理模块
-│   ├─ VlanPanel.java    # VLAN配置模块
-│   ├─ StpPanel.java     # 生成树配置模块
-│   └─ ...               # 其它功能模块
-├─ docs/                 # 项目文档与截图
+│--DevicePanel("设备管理"), "设备管理");
+|--VlanPanel("VLAN"), "VLAN");
+|--StpPanel("生成树"), "生成树");
+|--LacpPanel("端口聚合"), "端口聚合");
+|--PortSecurityPanel("端口安全"), "端口安全");
+|--IpPanel("IP配置"), "IP配置");
+|--RoutePanel("路由配置"), "路由配置");
+|--AclPanel("ACL"), "ACL");
+|--QosPanel("QoS"), "QoS");
+|--DhcpPanel("DHCP"), "DHCP");
+|--NatPanel("NAT"), "NAT");
+|--SnmpPanel("SNMP"), "SNMP");
+|--MirrorPanel("端口镜像"), "端口镜像");
+|--UserPanel("用户管理"), "用户管理");
+|--ConfigPanel("配置管理"), "配置管理");
+|--TopologyPanel("拓扑监控"), "拓扑监控");
 ├─ .gitignore
 └─ README.md
 ```
